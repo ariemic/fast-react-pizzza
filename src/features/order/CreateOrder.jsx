@@ -114,10 +114,10 @@ export async function action({ request }) {
   if (Object.keys(errors).length > 0) return errors;
 
   /*
-  //* newOrder is already a new object coming back from an api
+  
   const newOrder = await createOrder(order);
 
-  //! we can't call useNavigate, because hooks can be call only from the components
+  
   return redirect(`/order/${newOrder.id}`);
   */
   return null;
