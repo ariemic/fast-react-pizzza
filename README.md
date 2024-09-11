@@ -2,27 +2,27 @@
 
 ## HomePage
 
-![alt text](image.png)
+![alt text](img/image.png)
 
 ## Menu Page
 
 Without orders in a cart
-![alt text](image-1.png)
+![alt text](img/image-1.png)
 
 With orders
 ![alt text](image-2.png)
 
 ## Cart view
 
-![alt text](image-3.png)
+![alt text](img/image-3.png)
 
 ## Order form
 
-![alt text](image-4.png)
+![alt text](img/image-4.png)
 
 ## Order view
 
-![alt text](image-5.png)
+![alt text](img/image-5.png)
 
 ## how to run
 
