@@ -8,6 +8,7 @@ import CreateOrder, {
 } from "./features/order/CreateOrder";
 import Order, { loader as orderLoader } from "./features/order/Order";
 import AppLayout from "./ui/AppLayout";
+import { action as updateOrderAction } from "./features/order/UpdateOrder";
 
 //* to use data fatching in new router (from version 6) we need to defing router as an object istead of classic way, as we did in worldwise project
 //* so now data and urls are untitled together (all in one place)
@@ -38,6 +39,7 @@ const router = createBrowserRouter([
         element: <Order />,
         loader: orderLoader,
         errorElement: <Error />,
+        action: updateOrderAction,
       },
     ],
   },

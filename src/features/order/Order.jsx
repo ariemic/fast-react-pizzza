@@ -9,6 +9,7 @@ import {
 } from "../../utils/helpers";
 import OrderItem from "./OrderItem";
 import { useEffect } from "react";
+import UpdateOrder from "./UpdateOrder";
 
 function Order() {
   const order = useLoaderData();
@@ -37,7 +38,7 @@ function Order() {
     <div className="space-y-8 px-4 py-6">
       <div className="flex flex-wrap items-center justify-between">
         <h2 className="text-xl font-semibold text-stone-700">
-          Order #IIDSAT status
+          Order #{id} status
         </h2>
 
         <div className="flex gap-2 uppercase">
@@ -90,6 +91,7 @@ function Order() {
           To pay on delivery: {formatCurrency(orderPrice + priorityPrice)}
         </p>
       </div>
+      {!priority && <UpdateOrder order={order} />}
     </div>
   );
 }
